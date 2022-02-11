@@ -1,0 +1,28 @@
+{
+    "apps":[
+        {
+            "name":"Proceso1",
+            "script":"./src/app.js",
+            "watch":"true",
+            "args":"--port 8082"
+        },
+        {
+            "name":"Proceso2",
+            "script":"./src/app.js",
+            "watch":"true",
+            "args":"--port 8083"
+        },
+        {
+            "name":"Proceso3",
+            "script":"./src/app.js",
+            "watch":"true",
+            "args":"--port 8084"
+        },
+        {
+            "name":"Proceso4",
+            "script":"./src/app.js",
+            "watch":"true",
+            "args":"--port 8085"
+        }
+    ]
+}

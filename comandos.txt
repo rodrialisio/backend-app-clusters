@@ -1,0 +1,29 @@
+PRIMERA CONSIGNA:
+
+Para ejecutar el servidor en modo fork / cluster (desde src):
+node app --mode FORK
+node app --mode CLUSTER
+
+Para ejecutar el servidor (FORK) con pm2 en modo fork / cluster (desde src):
+pm2 start app.js 
+pm2 start app.js -i max
+
+Para permitir el modo escucha:
+pm2 start app.js --watch
+pm2 start app.js -i max --watch
+
+Para terminar un proceso específico que está corriendo (ejemplo: pid 1234):
+taskkill /pid 1234 -f
+
+Para terminar todos los procesos corriendo con pm2:
+pm2 delete all
+
+
+SEGUNDA CONSIGNA:
+
+Para crear el cluster de servers con el módulo nativo cluster (desde src):
+pm2 start app.js -i max -- --port 8081
+
+Para redirigir las consultas a "/api/randoms" a un cluster de servers gestionado por nginx (desde carpeta de proyecto):
+pm2 start ./ecosystem.json
+
