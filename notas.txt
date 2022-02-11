@@ -2,3 +2,4 @@ Comentarios:
 No dispone de vistas, todos los request son GET
 De acuerdo a lo acordado con el profesor, hice un proyecto aparte para no tener que pasar todos los "imports" a require".
 Las lineas de comandos se encuentran detalladas en el archivo comandos.txt
+nginx.conf esta dentro de este repositorio como un archivo mas
